@@ -24,4 +24,4 @@ shown on their profile along with a potenial algorithm.
 
 This webpage is deployed on GitHub Pages
 
-- Deployment Link:
+- Deployment Link: https://ryanbigdoublr.github.io/se_project_spots/
