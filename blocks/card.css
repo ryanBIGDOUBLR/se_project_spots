@@ -15,6 +15,16 @@
   justify-content: space-between;
 }
 
+.card__title {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .card__like-btn {
   background-image: url(../images/like-icon.svg);
   height: 20px;

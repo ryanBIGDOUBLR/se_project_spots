@@ -1,0 +1,9 @@
+.footer {
+  border-top: 1px rgba(33, 33, 33, 0.4) solid;
+}
+
+.footer__copyright {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+}

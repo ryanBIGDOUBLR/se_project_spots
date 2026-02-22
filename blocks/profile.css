@@ -17,21 +17,56 @@
 
 .profile__name {
   margin: 0 0 12px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 32px;
   line-height: 1;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
 }
 
 .profile__description {
   margin: 0;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
 }
 
 .profile__edit-btn {
   margin-top: auto;
+  opacity: 0.7;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
 }
 
 .profile__add-btn {
   margin-left: auto;
+  color: #fcf5e5;
+  background-color: #212121;
+  width: 157px;
+  height: 52px;
+  border-radius: 8px;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
 }
 
 @media screen and (max-width: 627px) {
@@ -52,10 +87,22 @@
   .profile__name {
     font-size: 20px;
     margin: 0 0 6px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 288px;
   }
 
   .profile__description {
     margin: 0 0 32px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 288px;
   }
 
   .prifle__column {
