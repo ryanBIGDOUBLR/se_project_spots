@@ -11,3 +11,9 @@
   font-weight: 400;
   color: #212121b2;
 }
+
+@media screen and (max-width: 627px) {
+  .footer {
+    max-width: 288px;
+  }
+}
