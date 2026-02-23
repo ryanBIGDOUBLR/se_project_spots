@@ -1,10 +1,10 @@
 .card {
-  max-width: 413px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__image {
   height: 413px;
-  width: 413px;
   object-fit: cover;
   display: block;
   border-radius: 8px;
@@ -49,6 +49,7 @@
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
-    margin: 0 0 12px;
+    padding: 0 0 12px;
+    margin: 0;
   }
 }
