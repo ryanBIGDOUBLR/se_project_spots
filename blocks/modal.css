@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: visibility linear 0.3s, opacity 0.3s ease-in-out linear;
+  transition: visibility linear 0.3s, opacity 0.3s linear;
 }
 
 .modal_is-opened {
@@ -36,7 +36,7 @@
   height: 40px;
   border: none;
   background-color: transparent;
-  background-image: url(../images/Close-Icon.png);
+  background-image: url(../images/Group\ 27.svg);
   opacity: 0.4;
   cursor: pointer;
   opacity: 0.4;
@@ -110,7 +110,7 @@
   }
 
   .modal__label {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .modal__submit-btn {

@@ -50,6 +50,7 @@ function handleNewPostSubmit(evt) {
   evt.preventDefault();
   console.log(newCaptionInput.value);
   console.log(newImageInput.value);
+  newPostForm.reset();
   newPostModal.classList.remove("modal_is-opened");
 }
 
