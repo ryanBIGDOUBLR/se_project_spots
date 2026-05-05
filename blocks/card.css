@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .card__image {
@@ -43,6 +44,33 @@
 }
 
 .card__like-btn:hover {
+  opacity: 1;
+}
+
+.card__like-btn_active {
+  background-image: url(../images/Union.svg);
+  opacity: 1;
+}
+
+.card__like-btn_active:hover {
+  opacity: 0.4;
+}
+
+.card__delete-btn {
+  background-image: url(../images/State=Default.png);
+  background-color: transparent;
+  position: absolute;
+  background-repeat: no-repeat;
+  border: none;
+  width: 32px;
+  height: 32px;
+  right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.card__delete-btn:hover {
+  background-image: url(../images/State=Hover.svg);
   opacity: 1;
 }
 
