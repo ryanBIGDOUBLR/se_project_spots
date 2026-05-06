@@ -12,6 +12,7 @@
   opacity: 0;
   transition: visibility linear 0.3s, opacity 0.3s linear;
   padding: 0 10px;
+  z-index: 1111;
 }
 
 .modal_type_preview {
@@ -135,17 +136,13 @@
   line-height: 1.2;
   letter-spacing: 0;
   background-color: #212121;
-  max-width: 214px;
+  position: absolute;
   border-radius: 8px;
   padding: 8px;
   margin-top: 8px;
 }
 
 @media screen and (max-width: 627px) {
-  .modal {
-    padding: 10px;
-  }
-
   .modal__image {
     max-width: unset;
   }
@@ -169,7 +166,6 @@
 
   .modal__input {
     font-size: 16px;
-    margin-bottom: 24px;
   }
 
   .modal__label {
@@ -182,6 +178,10 @@
   }
 
   .modal__caption {
+    font-size: 16px;
+  }
+
+  .modal__title {
     font-size: 16px;
   }
 }
