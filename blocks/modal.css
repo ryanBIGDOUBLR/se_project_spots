@@ -42,7 +42,7 @@
   height: 40px;
   border: none;
   background-color: transparent;
-  background-image: url(../images/Property\ 1=Variant3.svg);
+  background-image: url(../images/grey-close.svg);
   opacity: 0.4;
   cursor: pointer;
 }
@@ -50,6 +50,7 @@
 .modal__close-btn_type_preview {
   top: 0;
   right: -48.5px;
+  background-image: url(../images/white-close.svg);
 }
 
 .modal__close-btn:hover {
