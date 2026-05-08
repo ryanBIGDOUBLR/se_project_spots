@@ -118,6 +118,7 @@
 
   .profile__column {
     margin: 0;
+    align-items: center;
   }
 
   .profile__add-btn {

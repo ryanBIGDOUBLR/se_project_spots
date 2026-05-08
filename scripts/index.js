@@ -137,8 +137,6 @@ function handleNewPostSubmit(evt) {
     link: newImageInput.value,
   };
 
-  console.log(newCaptionInput.value);
-  console.log(newImageInput.value);
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
 

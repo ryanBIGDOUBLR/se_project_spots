@@ -109,6 +109,7 @@
   padding: 18px 32px;
   cursor: pointer;
   opacity: 1;
+  border: none;
 }
 
 .modal__submit-btn:hover {
