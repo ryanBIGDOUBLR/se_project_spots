@@ -91,11 +91,20 @@ function getCardElement(data) {
   return cardElement;
 }
 
+function closeModalEscape(evt) {
+  if (evt.key === "Escape") {
+    const openModal = document.querySelector(".modal_is-opened");
+    closeModal(openModal);
+  }
+}
+
 function openModal(modal) {
+  document.addEventListener("keydown", closeModalEscape);
   modal.classList.add("modal_is-opened");
 }
 
 function closeModal(modal) {
+  document.removeEventListener("keydown", closeModalEscape);
   modal.classList.remove("modal_is-opened");
 }
 
@@ -143,6 +152,7 @@ function handleNewPostSubmit(evt) {
 
   newPostForm.reset();
   closeModal(newPostModal);
+  disableButton(evt.submitter, settings);
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
