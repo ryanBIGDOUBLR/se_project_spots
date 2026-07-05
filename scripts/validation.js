@@ -14,6 +14,12 @@ const showInputError = (formElement, inputElement, errorMessage, config) => {
   errorElement.classList.add(config.errorClass);
 };
 
+function resetValidation(formElement, inputList, config) {
+  inputList.forEach((input) => {
+    hideInputError(formElement, input, config);
+  });
+}
+
 const hideInputError = (formElement, inputElement, config) => {
   const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
   inputElement.classList.remove(config.inputErrorClass);
