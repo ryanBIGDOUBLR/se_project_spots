@@ -111,6 +111,11 @@
 .modal__input-error {
   margin-top: 8px;
   color: rgba(255, 0, 0, 0.6);
+  display: none;
+}
+
+.modal__input-error_active {
+  display: block;
 }
 
 .modal__submit-btn {
