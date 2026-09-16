@@ -1,3 +1,11 @@
+import "./index.css";
+import { enableValidation, settings } from "./validation.js";
+
+const goldenBridgeImage = new URL(
+  "../src/images/7-photo-by-griffin-wooldridge-from-pexels",
+  import.meta.url,
+);
+
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -35,10 +43,10 @@ const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
 const editProfileForm = editProfileModal.querySelector(".modal__form");
 const editProfileNameInput = editProfileModal.querySelector(
-  "#profile-name-input"
+  "#profile-name-input",
 );
 const editProfileDescriptionInput = editProfileModal.querySelector(
-  "#profile-description-input"
+  "#profile-description-input",
 );
 
 const newPostBtn = document.querySelector(".profile__add-btn");
@@ -114,7 +122,7 @@ editProfileBtn.addEventListener("click", function () {
   resetValidation(
     editProfileForm,
     [editProfileNameInput, editProfileDescriptionInput],
-    settings
+    settings,
   );
   openModal(editProfileModal);
 });
@@ -175,3 +183,5 @@ modals.forEach((modal) => {
     }
   });
 });
+
+enableValidation(settings);
